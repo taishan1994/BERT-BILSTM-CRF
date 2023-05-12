@@ -1,0 +1,42 @@
+{
+  "bert_dir": "./model_hub/chinese-bert-wwm-ext/",
+  "output_dir": "./checkpoint/dgre",
+  "data_dir": "./data/",
+  "data_path": "./data/dgre/ner_data",
+  "labels": [
+    "故障设备",
+    "故障原因"
+  ],
+  "bio_labels": [
+    "O",
+    "B-故障设备",
+    "I-故障设备",
+    "B-故障原因",
+    "I-故障原因"
+  ],
+  "num_labels": 5,
+  "label2id": {
+    "O": 0,
+    "B-故障设备": 1,
+    "I-故障设备": 2,
+    "B-故障原因": 3,
+    "I-故障原因": 4
+  },
+  "id2label": {
+    "0": "O",
+    "1": "B-故障设备",
+    "2": "I-故障设备",
+    "3": "B-故障原因",
+    "4": "I-故障原因"
+  },
+  "max_seq_len": 512,
+  "epochs": 3,
+  "train_batch_size": 12,
+  "dev_batch_size": 12,
+  "bert_learning_rate": 3e-05,
+  "crf_learning_rate": 0.003,
+  "adam_epsilon": 1e-08,
+  "weight_decay": 0.01,
+  "warmup_proportion": 0.01,
+  "save_step": 500
+}
