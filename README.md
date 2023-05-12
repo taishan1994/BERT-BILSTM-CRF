@@ -1,6 +1,8 @@
 # BERT-BILSTM-CRF
 使用BERT-BILSTM-CRF进行中文命名实体识别。突出一个词：**方便**。
 
+数据和模型下载地址：https://cowtransfer.com/s/3a155b702dfa42 点击链接查看 [ BERT-BILSTM-CRF ] ，或访问奶牛快传 cowtransfer.com 输入传输口令 hmpdf8 查看；
+
 # 依赖
 
 ```python
