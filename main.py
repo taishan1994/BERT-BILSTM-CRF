@@ -56,9 +56,10 @@ class Trainer:
                 self.optimizer.step()
                 self.schedule.step()
                 print(f"【train】{epoch}/{self.epochs} {global_step}/{self.total_step} loss:{loss.item()}")
+                global_step += 1
                 if global_step % self.save_step == 0:
                     torch.save(self.model.state_dict(), os.path.join(self.output_dir, "pytorch_model_ner.bin"))
-                global_step += 1
+                
 
         torch.save(self.model.state_dict(), os.path.join(self.output_dir, "pytorch_model_ner.bin"))
 
