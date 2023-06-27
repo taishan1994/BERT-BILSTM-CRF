@@ -72,7 +72,7 @@ pytorch-crf==0.7.2
 max_seq_len=512
 train_batch_size=12
 dev_batch_size=12
-save_step=500
+save_step=20
 epochs=3
 ```
 
