@@ -10,7 +10,7 @@ from transformers import BertTokenizer
 
 
 def get_args(args_path, args_name=None):
-    with open(args_path, "r") as fp:
+    with open(args_path, "r", encoding="utf-8") as fp:
         args_dict = json.load(fp)
     # 注意args不可被修改了
     args = namedtuple(args_name, args_dict.keys())(*args_dict.values())
