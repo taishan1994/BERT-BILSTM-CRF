@@ -26,7 +26,7 @@ class Predictor:
         self.max_seq_len = self.ner_args.max_seq_len
         self.device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
         self.ner_model = BertNer(self.ner_args)
-        self.ner_model.load_state_dict(torch.load(os.path.join(self.ner_args.output_dir, "pytorch_model_ner.bin")))
+        self.ner_model.load_state_dict(torch.load(os.path.join(self.ner_args.output_dir, "pytorch_model_ner.bin"), map_location="cpu"))
         self.ner_model.to(self.device)
         self.data_name = data_name
 
