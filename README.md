@@ -12,7 +12,7 @@
 - 添加分布式训练，具体参考 
 `transformers_trainer.py`以及启动脚本`train.sh`
 - 添加转换onnx，具体参考convert_onnx/文件夹
-- 添加支持triton推理，具体参考convert_triton
+- 添加支持triton推理，具体参考convert_triton/文件夹
 
 
 # 依赖
